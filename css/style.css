@@ -1,0 +1,203 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    width: 100%;
+    background-image: url(../img/bg-light.png);
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+/* Шапка сайта */
+header {
+
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 25px auto;
+}
+/* Меню сайта в шапке */
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    transition: align-items .2s;
+    padding: 5px 55px;
+}
+.logo {
+    /* font-size: 2rem; */
+    display: inline-block;
+    padding: 3px 5px;
+    /* background: #27095f; */
+    color: #fff;
+    margin: 5px 0 0 5px;
+    
+}
+.logo:hover{
+    background: rgb(0,3,255);
+    background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+    border-radius: 85px;
+}
+/* Кнопки навигации */
+.made-btn{
+    background: #5209BA;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.made-btn:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+.custom-btn {
+    width: 110px;
+    height: 20px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+/* Конец кнопок навигации */
+
+/* кнопка вверх */
+.btn-up {
+    position: fixed;/* фиксированное позиционирование */
+    background-color: #673ab7;/* цвет фона */
+    right: 40px;/* расстояние от правого края окна браузера */
+    bottom: 0;/* расстояние от нижнего края окна браузера */
+    border-top-left-radius: 8px;/* скругление верхнего левого угла */
+    border-top-right-radius: 8px;/* скругление верхнего правого угла */
+    cursor: pointer;/* вид курсора */
+    display: flex;/* отображение элемента как flex */
+    align-items: center;/* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    justify-content: center;/* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    width: 60px;/* ширина элемента */
+    height: 50px;/* высота элемента */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image:url(../img/kursor.png); 
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #512da8; /* цвет заднего фона при наведении */
+    }
+  }
+/*Конец кнопка вверх */
+section{
+    width: 95%;
+    margin: 0 auto;   
+}
+.description{
+    font-size: 12px;
+    line-height: 0.8em;
+    color: #444444;
+}
+article{
+    background-color: #f5efef;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}
+.communication{
+    background-color: #f5efef;
+    /* padding-left: 250px; */
+    border-radius: 25px;
+    padding: 10px 25px;
+    margin-bottom: 15px;
+}
+.communication p{
+    text-align: center;
+}
+.communication_form h3{
+    text-align: center;
+}
+.form-row{
+    display: flex;
+    margin-bottom: 10px;
+}
+.form-row .form-group{
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+}
+.form-row .form-group:last-child{
+    margin-right: 0;
+}
+.form-group label{
+    display: block;
+    font-size: 14px;
+    color: #86868f;
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    font-family: inherit;
+}
+.btn_form{
+    background: #5209BA;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 35px;
+    width: 90px;
+}
+.btn_form:hover{
+    opacity: 0.8;
+}
+.transition{
+    text-align: center;
+}
+.transition a{
+    margin-left: 15px;
+    color: #000;
+    font-weight: bold;
+}
+footer{
+    padding: 10px 25px;
+    background-color: #A9A9A9;
+    border-radius: 25px;
+    width: 90%;
+    margin: 25px auto;
+}
+footer p{
+    font-size: 12px;
+    line-height: 0.8em;
+}
